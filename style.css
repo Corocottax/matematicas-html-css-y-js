@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+    --background: rgb(244, 244, 244);
+    --main: rgb(56, 54, 61);
+    --text: rgb(135, 113, 90);
+    --secondary: rgb(238, 179, 70);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--main);
+    margin: 50px 0px;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.test, .respuesta {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: var(--main);
+}
+
+.respuesta {
+    border: none;
+    background-color: white;
+    color: var(--main);
+    text-align: center;
+    font-size: 40px;
+}
+
+.igual {
+    font-size: 40px;
+    color: var(--main);
+}
+
+.pregunta {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.comprobar {
+    border-radius: 20px;
+    background-color: var(--secondary);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 100px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 30px;
+    border: 3px solid var(--main);
+    color: var(--main);
+    margin-bottom: 50px;
+}
+
+.final {
+    width: 100px;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .final {
+        width: 50px;
+    }
+    .pregunta {
+        margin: 0;
+    }
+    .test, .respuesta {
+        width: 100px;
+        height: 50px;
+    }
+    .comprobar {
+        width: 150px;
+        font-size: 25px;
+        height: 70px;
+    }
+}
